@@ -1,0 +1,74 @@
+
+<h1>Edit Product's Details</h1>
+
+
+<div class="col-md-3"></div>
+
+
+<div class="row">
+
+
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input [(ngModel)]="name" type="text" class="form-control">
+    </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">Price</label>
+      <input [(ngModel)]="price" type="text" class="form-control">
+  </div>
+</div>
+
+</div>
+
+<div class="col-md-3"></div>
+
+<div class="row">
+
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">Discount</label>
+      <input [(ngModel)]="discount" type="text" class="form-control">
+    </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">Price with Discount</label>
+      <input [(ngModel)]="priceWithDiscount" type="text" class="form-control">
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div class="col-md-3"></div>
+<div class="row">
+
+    <div class="col-md-3">
+        <div class="form-group">
+          <label for="">Description</label>
+          <textarea [(ngModel)]="description" rows="4" class="form-control"></textarea>
+        </div>
+      </div>
+
+</div>
+
+
+
+<div class="col-md-3"></div>
+
+<div class="row">
+  <div class="col-md-3">
+    <button (click)="onUpdate()" class="btn btn-success">Update</button>
+    <a style="margin-left: 10px;" routerLink="/login/dashboard/product" class="btn btn-danger">Cancel</a>
+  </div>
+</div>

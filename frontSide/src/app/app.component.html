@@ -1,0 +1,58 @@
+
+<div class="myclass">
+
+ <nav id="myid" class="navbar navbar-dark bg-primary navbar-fixed-top" style="background-color: #0F1111;height: 60px;">
+
+
+  <form id="page" class="form-inline">
+
+      <ul class="nav navbar-nav">
+          <li ><a class="hello" routerLink="MRlogin/home" href="">Home</a></li>
+          <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/MRlogin/allopathic" href="#">Business</a></li>
+              <li><a routerLink="/MRlogin/homoeopathy" href="#">Programming</a></li>
+              <li><a routerLink="/MRlogin/ayurvedic" href="#">Historical Fiction</a></li>
+            </ul>
+          </li> -->
+
+
+          <li (click)="onLogin()" *ngIf="!isLoggedIn"><a routerLink="/MRlogin" class="hello" href="#">Login & Signup</a></li>
+
+          <li *ngIf="isLoggedIn" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">{{username}}<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- <li><a  href="#1">Profile</a></li> -->
+              <li><a routerLink="/MRlogin/orders" href="#2">Orders</a></li>
+              <li><a (click)="onLogout()" >Logout</a></li>
+            </ul>
+          </li>
+
+          <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a  >Contact Us</a></li>
+              <li><a  >Give Feedback</a></li>
+              <li><a  >Download App</a></li>
+            </ul>
+          </li> -->
+          <li ><a routerLink="/MRlogin/cart" class="hello" > Cart</a></li>
+          <li ><a routerLink="/login" class="hello" href="#">Admin</a></li>
+        </ul>
+  <div> <a style="margin-left: 180px;margin-top:3px;font-size: medium" class="navbar-brand">BookShop</a> </div>
+
+  <input [(ngModel)]="search" name="search" size="40" style="margin-top: 11px" class="form-control mr-sm-2" type="search" placeholder="Search for product" aria-label="search" >
+   <button (click)="onSearch()" style="margin-top: 11px" class="btn btn-warning" type="submit">  <a href="MRlogin/search"> Search </a> </button>
+  </form>
+</nav>
+
+<router-outlet></router-outlet>
+
+<div class="row">
+              <div class="col-md-12">
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+
+</div>
+</div>
+</div>
